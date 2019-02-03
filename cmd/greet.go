@@ -20,6 +20,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var name string
+
 // greetCmd represents the greet command
 var greetCmd = &cobra.Command{
 	Use:   "greet",
@@ -31,7 +33,7 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("greet called")
+		fmt.Printf("Hello, %s!\n", name)
 	},
 }
 
@@ -46,5 +48,5 @@ func init() {
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// greetCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	greetCmd.Flags().StringVarP(&name, "name", "n", "World", "Your name")
 }
