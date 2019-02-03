@@ -120,6 +120,14 @@
   version = "v1.3.1"
 
 [[projects]]
+  digest = "1:33092b366cfcc395fae86161d7caa4c7ffef4f93ee43113c1c1e28fc0dc71972"
+  name = "github.com/ttacon/chalk"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "76b3c8b611dea8f83e49e9ce81fc2b189e0ef3d2"
+  version = "v0.1"
+
+[[projects]]
   branch = "master"
   digest = "1:e148a4a19f62c442c03fbab1c8810780d739bcc3e9e6b818971035e1c4946582"
   name = "golang.org/x/sys"
@@ -157,6 +165,7 @@
     "github.com/mitchellh/go-homedir",
     "github.com/spf13/cobra",
     "github.com/spf13/viper",
+    "github.com/ttacon/chalk",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

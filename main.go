@@ -14,7 +14,11 @@
 
 package main
 
-import "cli-exp/cmd"
+import (
+	"cli-exp/cmd"
+	"fmt"
+	"github.com/ttacon/chalk"
+)
 
 var (
 	version = "dev"
@@ -22,6 +26,10 @@ var (
 	date    = "unknown"
 )
 
+func versionString() string {
+	return fmt.Sprintf("%s, %s, %s", version, commit, date)
+}
 func main() {
+	fmt.Println("***", chalk.Bold.TextStyle("cli-exp"), "(" + versionString() + ")", "***")
 	cmd.Execute()
 }
