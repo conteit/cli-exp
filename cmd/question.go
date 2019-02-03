@@ -16,8 +16,8 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/AlecAivazis/survey"
 	"github.com/spf13/cobra"
+	"gopkg.in/AlecAivazis/survey.v1"
 )
 
 var qs = []*survey.Question{
@@ -65,7 +65,7 @@ to quickly create a Cobra application.`,
 			return
 		}
 
-		fmt.Printf("%s chose %s.", answers.Name, answers.FavoriteColor)
+		fmt.Printf("%s chose %s.\n", answers.Name, answers.FavoriteColor)
 	},
 }
 

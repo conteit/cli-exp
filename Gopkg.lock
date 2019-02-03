@@ -2,14 +2,6 @@
 
 
 [[projects]]
-  digest = "1:f4d255431b8bb6f86b6ac32fd0614a26eb17a7d2b778f32cf2de918cbd60f49c"
-  name = "github.com/AlecAivazis/survey"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "ee72c28b95a5ff3e227cfd403f556f0ef4b07ca5"
-  version = "v1.8.2"
-
-[[projects]]
   digest = "1:abeb38ade3f32a92943e5be54f55ed6d6e3b6602761d74b4aab4c9dd45c18abd"
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
@@ -191,9 +183,10 @@
   version = "v0.3.0"
 
 [[projects]]
-  digest = "1:677c876fe94c739ec7bc3e12e731933f5c95eb3162bd54f3015edf31f053aecd"
+  digest = "1:61e056dd0a189d9f1d07de809181f2ee5d36058d1ce4f9e58f443a1bea745ac0"
   name = "gopkg.in/AlecAivazis/survey.v1"
   packages = [
+    ".",
     "core",
     "terminal",
   ]
@@ -213,11 +206,11 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/AlecAivazis/survey",
     "github.com/mitchellh/go-homedir",
     "github.com/spf13/cobra",
     "github.com/spf13/viper",
     "github.com/ttacon/chalk",
+    "gopkg.in/AlecAivazis/survey.v1",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
