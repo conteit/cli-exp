@@ -44,3 +44,7 @@
 [[constraint]]
   name = "github.com/ttacon/chalk"
   version = "0.1.0"
+
+[[constraint]]
+  name = "github.com/AlecAivazis/survey"
+  version = "1.8.2"
