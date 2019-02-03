@@ -14,3 +14,7 @@
 dist/
 vendor/
 
+
+go\.sum
+
+go\.mod
